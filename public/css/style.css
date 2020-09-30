@@ -16149,4 +16149,18 @@ header .navbar .collapse ul li {
   border: none;
 }
 
+#section6 .row .col-4 i {
+  font-size: 30px;
+}
+#section6 .row .col-4:first-child {
+  background-color: #f3f2f3c5;
+}
+#section6 .row .col-4:nth-child(2) {
+  background-color: #DD4545;
+  border: none;
+}
+#section6 .row .col-4:last-child {
+  background-color: #f3f2f3c5;
+}
+
 /*# sourceMappingURL=style.css.map */
