@@ -16136,4 +16136,17 @@ header .navbar .collapse ul li {
   font-size: 10px;
 }
 
+#section4 {
+  background-image: url("../../public/img/cta-bg.jpg");
+  height: 600px;
+  background-position: center;
+}
+#section4 div {
+  padding: 300px 0px;
+}
+#section4 div button {
+  background-color: #DD4545;
+  border: none;
+}
+
 /*# sourceMappingURL=style.css.map */
