@@ -16173,16 +16173,18 @@ header .navbar .collapse ul li {
 #section7 .row .col-4 p {
   color: grey;
 }
-#section7 .row .col-4:nth-child(2) ul {
-  color: white;
-}
-#section7 .row .col-4:nth-child(2) ul li {
-  list-style-type: none;
-}
 #section7 .row .col-4:last-child button {
   border: 1px solid grey;
   border-radius: 4px;
   margin: 3px 5px;
+}
+
+footer {
+  background-color: black;
+  height: 80px;
+}
+footer p {
+  color: grey;
 }
 
 /*# sourceMappingURL=stle.css.map */
