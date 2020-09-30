@@ -16074,7 +16074,7 @@ header .navbar .collapse ul li {
 }
 
 #section2 {
-  height: 500px;
+  height: 300px;
 }
 #section2 .row .col-4 {
   margin: 0px 7px;
@@ -16112,6 +16112,28 @@ header .navbar .collapse ul li {
   background-color: #333;
   background-image: url("../../public/img/services/slider-3.jpg");
   background-image-background-position: center;
+}
+
+#section3 h2 {
+  font-weight: bolder;
+}
+#section3 .row .col-4 {
+  padding: 0;
+}
+#section3 .row .col-4:nth-child(1) {
+  margin-left: 220px;
+}
+#section3 .row .col-4:nth-child(2) {
+  margin-left: -200px;
+  margin-right: -200px;
+}
+#section3 .row .col-4 .d-flex button {
+  color: white;
+  background-color: #DD4545;
+  border-radius: 100%;
+  padding: 20px 10px;
+  border: none;
+  font-size: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
