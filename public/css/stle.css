@@ -16076,9 +16076,42 @@ header .navbar .collapse ul li {
 #section2 {
   height: 500px;
 }
-#section2 .row .col-4 img {
-  height: 150px;
+#section2 .row .col-4 {
+  margin: 0px 7px;
+}
+#section2 .row .col-4:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+  height: 200px;
+  background-color: #333;
+  background-image: url("../../public/img/services/service-1.jpg");
+  background-position: center;
+}
+#section2 .row .col-4 h1 {
+  border-bottom: 2px solid white;
+  padding: 0 60px;
+}
+#section2 .row .col-4:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  background-color: #333;
+  background-image: url("../../public/img/services/service-2.jpg");
+  background-position: center;
+}
+#section2 .row .col-4:nth-child(3) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  background-color: #333;
+  background-image: url("../../public/img/services/slider-3.jpg");
+  background-image-background-position: center;
 }
 
 /*# sourceMappingURL=stle.css.map */
