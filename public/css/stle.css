@@ -9894,8 +9894,8 @@ h3 {
   }
 }
 @font-face {
-  font-family: "roboto";
-  src: "../../public/fonts/Roboto-Regular.ttf";
+  font-family: "poppins";
+  src: "../../public/fonts/Poppins-Regular.ttf";
 }
 /*!
  * Font Awesome Free 5.15.0 by @fontawesome - https://fontawesome.com
@@ -16013,6 +16013,32 @@ readers do not read off random characters that represent icons */
 .far {
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
+}
+
+body {
+  margin: 0;
+  font-family: poppins;
+}
+
+header .navbar .navbar-brand {
+  font-size: 50px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+header .navbar .form-inline .blanc {
+  border-radius: 4px;
+  height: 15px;
+  background-color: white;
+}
+header .navbar .form-inline .noir {
+  border-radius: 4px;
+  height: 15px;
+  background-color: black;
+  margin-right: 5px;
+}
+header .navbar .collapse ul li {
+  margin: 0 10px;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=stle.css.map */

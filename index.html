@@ -7,22 +7,60 @@
     <link rel="stylesheet" href="./public/css/style.css">
 </head>
 <body>
+    <!-- CRÉATION DU HEADER -->
 <header>
-    <h1>emporium</h1>
-    <nav>
-        <ul>
-            <li>home</li>
-            <li>product</li>
-            <li>blog</li>
-            <li>elements</li>
-            <li>avout</li>
-            <li>contact</li>
-            <button></button>
-            <button></button>
-            <button>connexion</button>
-        </ul>
-    </nav>
+    <!-- La navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light d-flex flex-column">
+        <a class="navbar-brand" href="#">emporium.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse d-flex justify-content-around"  id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">product <span class="sr-only">(current)</span></a>
+              </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                blog
+              </a>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">elements <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">about <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">contact <span class="sr-only">(current)</span></a>
+              </li>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+           
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+           <button class="blanc"></button>
+           <button class="noir"></button>
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">connexion</button>
+
+          </form>
+        </div>
+      </nav>
+    
 </header>
+
+<section id="section1">
+
+
+</section>
 
 
     <script src="./public/js/main.js"></script>
