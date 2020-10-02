@@ -11,19 +11,26 @@ body
 
 
 header
+    // position: sticky
+    // top: 0
+    // z-index: 1
+    
+
     .navbar
+        background-color:  #F3F3F3
+       
         .navbar-brand
             font-size: 50px
             font-weight: bolder
             margin-bottom: 20px
             margin-top: 50px
         .form-inline
-            .blanc
+            #blanc
                 border-radius: 4px
                 height: 20px
                 width: 20px
                 background-color: white
-            .noir
+            #noir
                 border-radius: 4px
                 border: 1px solid gray
                 height: 20px
@@ -39,9 +46,43 @@ header
                     margin: 0 10px
                     text-transform: uppercase
                     
+   
 #section1
     background-color: #F3F3F3
     height: 500px
+    position: relative
+    #popup
+        background-color: white
+        position: absolute
+        left: 300px
+        z-index: 1
+        width: 65%
+        height:80%
+        top: 40px
+        border-radius: 20px
+        .row
+            .col-6
+                
+                    .form-group
+                        div
+                            button
+                                border-radius: 5px
+                                border: none    
+
+                
+                            
+                           
+                
+                    h1
+                        a
+                            text-decoration: none
+
+        
+       
+        
+
+   
+      
     .row
         .col-7
             padding: 50px 100px
@@ -113,27 +154,43 @@ header
 #section3
     h2
         font-weight: bolder
-    .row
-        
-        
-        .col-4
-            padding: 0
-            
-            &:nth-child(1)
-                margin-left: 220px
-                
+    .container
+        .row
+            .col-4
+                .abc
+                    
+                    
+                    position: relative
+                    img
 
-            &:nth-child(2)
-                margin-left: -200px
-                margin-right: -200px                
-            .d-flex
-                button
-                    color: white
-                    background-color: #DD4545
-                    border-radius: 100%
-                    padding: 20px 10px
-                    border: none
-                    font-size: 10px
+                    &:hover
+                            
+
+                        &::before
+                        
+                            content: "Salut Guys"
+                            position: absolute
+                            height: 0
+                            background-color: red
+                            opacity: 0.5
+                            bottom: 0
+                            animation: abc 2s 
+                            animation-iteration-count: 1
+                        
+                            
+                        
+                &:nth-child(2)
+                    div
+                        .text-white
+                            color: green
+                            background-color: #DD4545
+                            border-radius: 100px
+                            padding: 20px
+                            border: none
+                            font-size: 20px
+                    
+                
+                    
                 
 #section4
     background-image: url("../../public/img/cta-bg.jpg")
@@ -146,21 +203,78 @@ header
             border: none
 
 #section5
+    .container
+        .row
+            .col-2
+                
+                &:nth-child(2)
+                    .d-flex
+                        button
+                            background-color: #DD4545 
+                            border-radius: 30px
+                            border: none
+                            padding: 5px 10px
+        .carou
+            
+                button
+                    border-radius: 100%
+                    border: none 
+                    background-color: teal
+                    height: 10px
+                    width: 10px
+                    margin: 0px 10px              
+
+                    
+   
+            
+                
+        
 
 
 #section6
     .row
+     
         .col-4
-            i
-                font-size: 30px
-            &:first-child
-                background-color:#f3f2f3c5
-            &:nth-child(2)
-                background-color: #DD4545
-                border: none 
-            &:last-child
+            div
+                height: 370px
                 
-                background-color: #f3f2f3c5
+                background-color: #F3F3F3
+                i
+                    font-size: 30px
+                button
+                    border: none    
+                
+            &:nth-child(2)
+                div
+                    height: 370px
+                    background-color:#DD4545 
+                    i
+                        font-size: 30px
+                    button
+                        border: none    
+            &:nth-child(3)
+                div
+                    height: 370px
+                    i
+                        font-size: 30px
+                    button
+                        border: none    
+                    
+
+           
+                
+            
+            
+            
+   
+            // &:first-child
+                // background-color:#f3f2f3c5
+            // &:nth-child(2)
+                
+                // border: none 
+            // &:last-child
+                
+                // background-color: #f3f2f3c5
 #section7
     background-color: #343A40
     height: 500px
@@ -181,7 +295,17 @@ footer
     background-color: black
     height: 80px  
     p
-        color: grey                  
+        color: grey        
+
+@keyframes abc
+    0%
+        width: 100%
+        height: 0%
+        
+    100%
+        width: 100%
+        height: 50%
+                          
                         
              
             

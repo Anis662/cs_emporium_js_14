@@ -16021,19 +16021,22 @@ body {
   font-family: poppins;
 }
 
+header .navbar {
+  background-color: #F3F3F3;
+}
 header .navbar .navbar-brand {
   font-size: 50px;
   font-weight: bolder;
   margin-bottom: 20px;
   margin-top: 50px;
 }
-header .navbar .form-inline .blanc {
+header .navbar .form-inline #blanc {
   border-radius: 4px;
   height: 20px;
   width: 20px;
   background-color: white;
 }
-header .navbar .form-inline .noir {
+header .navbar .form-inline #noir {
   border-radius: 4px;
   border: 1px solid gray;
   height: 20px;
@@ -16052,6 +16055,24 @@ header .navbar .collapse ul li {
 #section1 {
   background-color: #F3F3F3;
   height: 500px;
+  position: relative;
+}
+#section1 #popup {
+  background-color: white;
+  position: absolute;
+  left: 300px;
+  z-index: 1;
+  width: 65%;
+  height: 80%;
+  top: 40px;
+  border-radius: 20px;
+}
+#section1 #popup .row .col-6 .form-group div button {
+  border-radius: 5px;
+  border: none;
+}
+#section1 #popup .row .col-6 h1 a {
+  text-decoration: none;
 }
 #section1 .row .col-7 {
   padding: 50px 100px;
@@ -16117,23 +16138,26 @@ header .navbar .collapse ul li {
 #section3 h2 {
   font-weight: bolder;
 }
-#section3 .row .col-4 {
-  padding: 0;
+#section3 .container .row .col-4 .abc {
+  position: relative;
 }
-#section3 .row .col-4:nth-child(1) {
-  margin-left: 220px;
+#section3 .container .row .col-4 .abc:hover::before {
+  content: "Salut Guys";
+  position: absolute;
+  height: 0;
+  background-color: red;
+  opacity: 0.5;
+  bottom: 0;
+  animation: abc 2s;
+  animation-iteration-count: 1;
 }
-#section3 .row .col-4:nth-child(2) {
-  margin-left: -200px;
-  margin-right: -200px;
-}
-#section3 .row .col-4 .d-flex button {
-  color: white;
+#section3 .container .row .col-4:nth-child(2) div .text-white {
+  color: green;
   background-color: #DD4545;
-  border-radius: 100%;
-  padding: 20px 10px;
+  border-radius: 100px;
+  padding: 20px;
   border: none;
-  font-size: 10px;
+  font-size: 20px;
 }
 
 #section4 {
@@ -16149,18 +16173,49 @@ header .navbar .collapse ul li {
   border: none;
 }
 
-#section6 .row .col-4 i {
+#section5 .container .row .col-2:nth-child(2) .d-flex button {
+  background-color: #DD4545;
+  border-radius: 30px;
+  border: none;
+  padding: 5px 10px;
+}
+#section5 .container .carou button {
+  border-radius: 100%;
+  border: none;
+  background-color: teal;
+  height: 10px;
+  width: 10px;
+  margin: 0px 10px;
+}
+
+#section6 .row .col-4 div {
+  height: 370px;
+  background-color: #F3F3F3;
+}
+#section6 .row .col-4 div i {
   font-size: 30px;
 }
-#section6 .row .col-4:first-child {
-  background-color: #f3f2f3c5;
-}
-#section6 .row .col-4:nth-child(2) {
-  background-color: #DD4545;
+#section6 .row .col-4 div button {
   border: none;
 }
-#section6 .row .col-4:last-child {
-  background-color: #f3f2f3c5;
+#section6 .row .col-4:nth-child(2) div {
+  height: 370px;
+  background-color: #DD4545;
+}
+#section6 .row .col-4:nth-child(2) div i {
+  font-size: 30px;
+}
+#section6 .row .col-4:nth-child(2) div button {
+  border: none;
+}
+#section6 .row .col-4:nth-child(3) div {
+  height: 370px;
+}
+#section6 .row .col-4:nth-child(3) div i {
+  font-size: 30px;
+}
+#section6 .row .col-4:nth-child(3) div button {
+  border: none;
 }
 
 #section7 {
@@ -16185,6 +16240,17 @@ footer {
 }
 footer p {
   color: grey;
+}
+
+@keyframes abc {
+  0% {
+    width: 100%;
+    height: 0%;
+  }
+  100% {
+    width: 100%;
+    height: 50%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
