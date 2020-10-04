@@ -171,11 +171,30 @@ header
                             content: "Salut Guys"
                             position: absolute
                             height: 0
-                            background-color: red
-                            opacity: 0.5
+                            background-color: black
+                            opacity: 0.9
                             bottom: 0
                             animation: abc 2s 
                             animation-iteration-count: 1
+                            max-width: 50%
+                            animation-fill-mode: forwards
+                            
+                            
+                        &::after
+                            
+                        
+                            content: "Salut Guys"
+                            position: absolute
+                            height: 0
+                            background-color: red
+                            opacity: 0.9
+                            bottom: 0
+                            animation: abc 2s 
+                            animation-iteration-count: 1
+                            max-width: 50%
+                            left: 50%   
+                            animation-fill-mode: forwards
+                           
                         
                             
                         
@@ -222,7 +241,19 @@ header
                     background-color: teal
                     height: 10px
                     width: 10px
-                    margin: 0px 10px              
+                    margin: 0px 10px     
+
+#caroussel
+    .center
+        align-items: center
+        display: flex
+        flex-direction: column
+        height: 100%
+        justify-content: center
+        .wraper
+            
+
+
 
                     
    

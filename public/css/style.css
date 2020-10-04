@@ -16145,11 +16145,26 @@ header .navbar .collapse ul li {
   content: "Salut Guys";
   position: absolute;
   height: 0;
-  background-color: red;
-  opacity: 0.5;
+  background-color: black;
+  opacity: 0.9;
   bottom: 0;
   animation: abc 2s;
   animation-iteration-count: 1;
+  max-width: 50%;
+  animation-fill-mode: forwards;
+}
+#section3 .container .row .col-4 .abc:hover::after {
+  content: "Salut Guys";
+  position: absolute;
+  height: 0;
+  background-color: red;
+  opacity: 0.9;
+  bottom: 0;
+  animation: abc 2s;
+  animation-iteration-count: 1;
+  max-width: 50%;
+  left: 50%;
+  animation-fill-mode: forwards;
 }
 #section3 .container .row .col-4:nth-child(2) div .text-white {
   color: green;
@@ -16188,6 +16203,13 @@ header .navbar .collapse ul li {
   margin: 0px 10px;
 }
 
+#caroussel .center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
 #section6 .row .col-4 div {
   height: 370px;
   background-color: #F3F3F3;
