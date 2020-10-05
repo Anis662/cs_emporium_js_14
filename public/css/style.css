@@ -16054,7 +16054,7 @@ header .navbar .collapse ul li {
 
 #section1 {
   background-color: #F3F3F3;
-  height: 500px;
+  height: auto;
   position: relative;
 }
 #section1 #popup {
@@ -16091,48 +16091,50 @@ header .navbar .collapse ul li {
   padding: 10px 40px;
 }
 #section1 .row .col-5 div img {
-  height: 500px;
+  height: auto;
 }
 
 #section2 {
-  height: 300px;
+  height: auto;
 }
-#section2 .row .col-4 {
-  margin: 0px 7px;
-}
-#section2 .row .col-4:first-child {
+#section2 .row .col-12 div {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
   height: 200px;
   background-color: #333;
   background-image: url("../../public/img/services/service-1.jpg");
   background-position: center;
 }
-#section2 .row .col-4 h1 {
-  border-bottom: 2px solid white;
-  padding: 0 60px;
-}
-#section2 .row .col-4:nth-child(2) {
+#section2 .row .col-12:first-child div {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
   height: 200px;
   background-color: #333;
-  background-image: url("../../public/img/services/service-2.jpg");
+  background-image: url("../../public/img/services/service-1.jpg");
   background-position: center;
 }
-#section2 .row .col-4:nth-child(3) {
+#section2 .row .col-12:nth-child(2) div {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  height: 200px;
+  background-color: #333;
+  background-image: url("../../public/img/services/service-1.jpg");
+  background-position: center;
+}
+#section2 .row .col-12:nth-child(2) div h1 {
+  border-bottom: 2px solid white;
+}
+#section2 .row .col-12:nth-child(3) div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 200px;
   background-color: #333;
   background-image: url("../../public/img/services/slider-3.jpg");
-  background-image-background-position: center;
+  background-position: center;
 }
 
 #section3 h2 {
@@ -16142,7 +16144,7 @@ header .navbar .collapse ul li {
   position: relative;
 }
 #section3 .container .row .col-4 .abc:hover::before {
-  content: "Salut Guys";
+  content: "Avant";
   position: absolute;
   height: 0;
   background-color: black;
@@ -16154,7 +16156,7 @@ header .navbar .collapse ul li {
   animation-fill-mode: forwards;
 }
 #section3 .container .row .col-4 .abc:hover::after {
-  content: "Salut Guys";
+  content: "Apres";
   position: absolute;
   height: 0;
   background-color: red;
@@ -16309,10 +16311,10 @@ header .navbar .collapse ul li {
 
 #section7 {
   background-color: #343A40;
-  height: 500px;
+  height: auto;
 }
 #section7 .row {
-  padding: 100px 200px;
+  padding: 100px;
 }
 #section7 .row .col-4 p {
   color: grey;
@@ -16339,6 +16341,43 @@ footer p {
   100% {
     width: 100%;
     height: 50%;
+  }
+}
+@media (max-width: 992 px) {
+  #section2 .row {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 992px) {
+  #section4 div h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 992px) {
+  header .navbar {
+    width: auto;
+  }
+}
+@media (max-width: 992px) {
+  #section1 {
+    background-color: #F3F3F3;
+    height: auto;
+    position: relative;
+  }
+
+  #popup {
+    background-color: white;
+    position: absolute;
+    left: 400px;
+    z-index: 1;
+    width: auto;
+    height: auto;
+    bottom: 50px;
+    border-radius: 20px;
+  }
+  #popup .row .col-6 .form-group div button {
+    border-radius: 5px;
+    border: none;
   }
 }
 
