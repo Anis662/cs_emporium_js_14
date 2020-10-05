@@ -42,6 +42,7 @@ console.log(map);
 
 let empor = document.getElementById("empo")
 let body = document.querySelector("body")
+let footer = document.getElementById("footer")
 
 button.addEventListener("click", (e) => {
     e.preventDefault()
@@ -56,6 +57,8 @@ liste6.style.color = "white"
 titre6.setAttribute("class", "text-white text-uppercase mb-5")
 titre61.setAttribute("class", "text-white text-uppercase mb-5")
 titre62.setAttribute("class", "text-white text-uppercase mb-5")
+footer.setAttribute("class", "bg-dark")
+
     
 
 
@@ -84,6 +87,7 @@ section7.style.backgroundColor = "black"
 
 buttonB.addEventListener("click", (e) => {
     e.preventDefault()
+    footer.setAttribute("class", "bg-white")
     titre6.setAttribute("class", "text-dark text-uppercase mb-5")
     titre61.setAttribute("class", "text-dark text-uppercase mb-5")
     titre62.setAttribute("class", "text-dark text-uppercase mb-5")

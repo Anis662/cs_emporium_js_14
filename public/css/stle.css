@@ -16108,6 +16108,9 @@ header .navbar .collapse ul li {
   background-image: url("../../public/img/services/service-1.jpg");
   background-position: center;
 }
+#section2 .row .col-12 div h1 {
+  border-bottom: 2px solid white;
+}
 #section2 .row .col-12:first-child div {
   display: flex;
   align-items: center;
@@ -16116,6 +16119,9 @@ header .navbar .collapse ul li {
   background-color: #333;
   background-image: url("../../public/img/services/service-1.jpg");
   background-position: center;
+}
+#section2 .row .col-12:first-child div h1 {
+  border-bottom: 2px solid white;
 }
 #section2 .row .col-12:nth-child(2) div {
   display: flex;
