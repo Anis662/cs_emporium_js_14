@@ -16056,11 +16056,13 @@ header .navbar .collapse ul li {
   background-color: #F3F3F3;
   height: auto;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 #section1 #popup {
   background-color: white;
   position: absolute;
-  left: 300px;
+  margin: 0 auto;
   z-index: 1;
   width: 65%;
   height: 80%;
@@ -16216,7 +16218,7 @@ header .navbar .collapse ul li {
   display: flex;
   grid-gap: 1em;
   overflow: hidden;
-  width: 74em;
+  width: 100%;
 }
 #caroussel .center .wrapper .inner {
   display: flex;
@@ -16354,6 +16356,12 @@ footer p {
   }
 }
 @media (max-width: 992px) {
+  #caroussel {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 992px) {
   header .navbar {
     width: auto;
   }
@@ -16368,12 +16376,15 @@ footer p {
   #popup {
     background-color: white;
     position: absolute;
-    left: 400px;
+    margin-left: auto;
+    margin-right: auto;
     z-index: 1;
     width: auto;
     height: auto;
-    bottom: 50px;
     border-radius: 20px;
+  }
+  #popup .row .col-6 h1 {
+    font-size: 10px;
   }
   #popup .row .col-6 .form-group div button {
     border-radius: 5px;
