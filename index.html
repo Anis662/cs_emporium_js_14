@@ -16,7 +16,7 @@
 
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light d-flex flex-column">
+    <nav class="navbar navbar-expand-lg navbar-light d-flex flex-column" id="laNav">
         <!-- <a class="navbar-brand" href="#">emporium.</a> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -25,24 +25,24 @@
         <div class="collapse navbar-collapse"  id="navbarSupportedContent">
             <h1 class="mr-5 d-none" id="empo">emporium.</h1>
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
+            <li class="nav-item active" >
+              <a class="nav-link" href="#" id="li1">home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">product <span class="sr-only">(current)</span></a>
+            <li class="nav-item active" >
+                <a class="nav-link" href="#" id="li2">product <span class="sr-only">(current)</span></a>
               </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">
+            <li class="nav-item active" >
+              <a class="nav-link" href="#" id="li3">
                 blog
               </a>
-              <li class="nav-item active">
-                <a class="nav-link" href="#">elements <span class="sr-only">(current)</span></a>
+              <li class="nav-item active" >
+                <a class="nav-link" href="#" id="li4">elements <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active" >
+                <a class="nav-link" href="#" id="li5">about <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#">about <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#">contact <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#" id="li6">contact <span class="sr-only">(current)</span></a>
               </li>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">Action</a>
@@ -123,7 +123,7 @@
         <div>
             <h2>Shop at</h2>
             <img src="./public/img/logo.png" alt="" class="img-fluid">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, quis illo. Id pariatur possimus assumenda iusto dolore ea cupiditate voluptate!</p>
+            <p id="para1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, quis illo. Id pariatur possimus assumenda iusto dolore ea cupiditate voluptate!</p>
             <button class="text-white text-uppercase">Sale items</button>
         </div>
     </div>
@@ -172,12 +172,12 @@
             </div>
             <div class="d-flex justify-content-center align-items-center">
                 <div class="my-4">
-                    <p class="font-weight-bold">
+                    <p class="font-weight-bold" id="para2">
                         Luxury Sofa
                     </p>
-                    <p class="text-danger">
+                    <span class="text-danger">
                         $600.00
-                    </p>
+                    </span>
                 </div>
 
             </div>
@@ -191,7 +191,7 @@
             <div class="d-flex justify-content-center m-4">
                 <button class="text-white bg-danger">sale</button>
                 <div class="flex-column mx-5">
-                <p>Leather Glaves</p>
+                <p id="para3">Leather Glaves</p>
                 <span class="text-danger"><del>$34.00</del> $27.00</span>
                 </div>
             </div>
@@ -203,7 +203,7 @@
             </div>
             <div class="d-flex justify-content-center align-items-center">
                 <div class="my-4">
-                    <p class="font-weight-bold">
+                    <p class="font-weight-bold" id="para4">
                         Colorful Bowl
                     </p>
                     <p class="text-danger">
@@ -223,7 +223,7 @@
             </div>
             <div class="d-flex justify-content-center align-items-center">
                 <div class="my-4">
-                    <p class="font-weight-bold">
+                    <p class="font-weight-bold" id="para5">
                         Luxury Sofa
                     </p>
                     <p class="text-danger">
@@ -240,7 +240,7 @@
                 <img class="img-fluid" src="./public/img/products_mini/product-tshitr.jpg" alt="">
             </div>
             <div class="my-4 text-center">
-                <p>
+                <p id="para6">
                     Minimal T-shirt
                 </p>
                 <span class="text-danger">$30.00</span>
@@ -253,7 +253,7 @@
             </div>
             <div class="d-flex justify-content-center align-items-center">
                 <div class="my-4">
-                    <p class="font-weight-bold">
+                    <p class="font-weight-bold" id="para7">
                         Colorful Bowl
                     </p>
                     <p class="text-danger">
@@ -273,7 +273,7 @@
             </div>
             <div class="d-flex justify-content-center align-items-center">
                 <div class="my-4">
-                    <p class="font-weight-bold">
+                    <p class="font-weight-bold" id="para8">
                         Luxury Sofa
                     </p>
                     <p class="text-danger">
@@ -290,7 +290,7 @@
                 <img class="img-fluid" src="./public/img/products_mini/product-bed.jpg" alt="">
             </div>
             <div class="text-center">
-                <p>Bed Linen</p>
+                <p id="para9">Bed Linen</p>
                 <span class="text-danger">$79.00</span>
             </div>
         </div>
@@ -300,7 +300,7 @@
             </div>
             <div class="d-flex justify-content-center align-items-center">
                 <div class="my-4">
-                    <p class="font-weight-bold">
+                    <p class="font-weight-bold" id="para10">
                         Colorful Bowl
                     </p>
                     <p class="text-danger">
@@ -325,92 +325,7 @@
 
         </section>
 
-        <!-- La cinquième section -->
-        <!-- <section id="section5" class="container-fluid mt-5">
-            <h1 class="text-center">Hot Fashion Products</h1>
-            <div class="container">
-            <div class="row d-flex justify-content-center flex-nowrap">
-                <div class="col-2">
-                    <div>
-                    <img src="./public/img/products_mini/product-luxry-sofa.jpg" class="img-fluid">
-                    </div>
-                    <div class="text-center">
-                        <p>Luxury Sofa</p>
-                        <span class="text-danger">$600.00</span>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div>
-                        <img src="./public/img/products_mini/product-gloves.jpg" class="img-fluid">
-                        </div>
-                        <div class="d-flex text-center">
-                            <button class="text-white text-uppercase bg-danger">sale</button>
-                            <div>
-                            <p>Leather Glaves</p>
-                            <span class="text-danger"><del>$34.00</del> $27.00</span>
-                            </div>
-                            
-                            
-                        </div>
-                </div>
-                <div class="col-2">
-
-                    <div>
-                        <img src="./public/img/products_mini/product-cups.jpg" class="img-fluid">
-                        </div>
-                        <div class="text-center">
-                            <p>Colorful Bowl</p>
-                            <span class="text-danger">$18.00</span>
-                        </div>
-                </div>
-                <div class="col-2">
-                    <div>
-                        <img src="./public/img/products_mini/product-bag.jpg" class="img-fluid">
-                        </div>
-                        <div class="text-center">
-                            <p>Luxury Sofa</p>
-                            <span class="text-danger">$600.00</span>
-                        </div>
-                </div>
-
-                <div class="col-2 d-none">
-                    <div>
-                        <img src="./public/img/products_mini/product-bag.jpg" class="img-fluid">
-                        </div>
-                        <div>
-                            <p>Luxury Sofa</p>
-                            <span class="text-danger">$600.00</span>
-                        </div>
-                </div>
-                <div class="col-2 d-none">
-                    <div>
-                        <img src="./public/img/products_mini/product-bag.jpg" class="img-fluid">
-                        </div>
-                        <div>
-                            <p>Luxury Sofa</p>
-                            <span class="text-danger">$600.00</span>
-                        </div>
-                </div>
-                <div class="col-md-2 col-md-offset-1 d-none">
-                    <img src="./public/img/products_mini/product-tshitr.jpg" class="img-fluid">
-    
-                        <div>
-                            <p>Minimal T-shirt</p>
-                            <span class="text-danger">$600.00</span>
-                        </div>
-                </div>
-            </div>
-            <div class="carou d-flex justify-content-center mt-5">
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-            </div>
-            </div>
-            
-
-
-        </section> -->
+        
         <!-- Le carousel -->
 
         <section id="caroussel" class="mt-5 container">
@@ -493,11 +408,11 @@
                   </div>
                 </div>
                 
-                <div class="map">
-                  <button class="active first"></button>
-                  <button class="second"></button>
-                  <button class="third"></button>
-                  <button class="quatre"></button>
+                <div class="map" id="map">
+                  <button class="active first bg-dark"></button>
+                  <button class="second bg-dark"></button>
+                  <button class="third bg-dark"></button>
+                  <button class="quatre bg-dark"></button>
                 </div>
               </div>
         </section>
@@ -543,11 +458,11 @@
         <section id="section7" class="mt-5">
             <div class="row d-flex flex-wrap">
                 <div class="col-4 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 ">
-                    <h6 class="text-white text-uppercase mb-5">About us</h6 >
+                    <h6 class="text-white text-uppercase mb-5" id="h63">About us</h6 >
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam sed aliquam error modi tempora eos. Doloribus cupiditate adipisci numquam amet dicta illo voluptate cumque beatae accusamus? Quo eligendi minus id consectetur repellat voluptatum reprehenderit molestiae vel, earum quos architecto vitae corporis harum.</p>
                 </div>
                 <div class="col-4 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                    <h6 class="text-white text-uppercase mb-5">Recents posts</h6>
+                    <h6 class="text-white text-uppercase mb-5" id="h61">Recents posts</h6>
                     
                         <p>>Hello World</p>
                         <p>>Wonderful serenity has taken</p>
@@ -556,7 +471,7 @@
             
                 </div>
                 <div class="col-4 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                    <h6 class="text-white text-uppercase mb-5">tag cloud</h6>
+                    <h6 class="text-white text-uppercase mb-5" id="h62">tag cloud</h6>
                     <div>
                         <button class="bg-dark text-secondary">business</button>
                         <button class="bg-dark text-secondary">confidence</button>

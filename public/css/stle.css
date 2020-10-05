@@ -16361,6 +16361,16 @@ footer p {
     flex-direction: column;
   }
 }
+@media (max-width: 992px) and (min-width: 346px) and (max-width: 645px) {
+  #caroussel .wrapper {
+    width: 17em;
+  }
+}
+@media (max-width: 992px) and (min-width: 768px) and (max-width: 1366px) {
+  #caroussel .wrapper {
+    width: 35em;
+  }
+}
 @media (max-width: 992px) {
   header .navbar {
     width: auto;
